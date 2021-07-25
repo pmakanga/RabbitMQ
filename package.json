@@ -1,0 +1,16 @@
+{
+  "name": "RabbitMQ",
+  "version": "1.0.0",
+  "description": "Download and Install RabbitMQ docker container\r ===============================================\r # for RabbitMQ 3.8\r docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management",
+  "main": "publisher.js",
+  "scripts": {
+    "publish": "node publisher.js",
+    "consume": "node consumer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  }
+}
